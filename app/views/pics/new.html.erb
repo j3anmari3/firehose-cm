@@ -1,9 +1,12 @@
-<div class="ice-box">
+<div class="ice-box span6 offeset3 text-center">
+	<h1 class="awesome-h1">
+		share your silly gifs
+	</h1>
 		<%= simple_form_for @pic do |f| %>
-			<%= f.input :title %>
-			<%= f.input :message %>
-			<%= f.input :who %>
-			<%= f.submit "Save" %>
+			<%= f.input :title, label: 'Enter  Your Title', placeholder: 'e.g. Riker claps' %>
+			<%= f.input :message, label: 'What is going on?' , placeholder: 'e.g. Pizza' %>
+			<%= f.input :who, label: 'Who is this?' , placeholder: 'e.g. Riker' %>
+			<%= f.submit "Save", :class => 'btn btn-warning btn-large' %>
 		<% end %>
 </div>
 
