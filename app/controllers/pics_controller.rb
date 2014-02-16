@@ -1,7 +1,7 @@
 class PicsController < ApplicationController
 	def index
 
-		@pics = Pic.all
+		@pics = Pic.order('title ASC')   
 	end
 
 	def new
@@ -16,7 +16,7 @@ class PicsController < ApplicationController
 	private
 
 	def pic_params
-		params.require(:pic).permit(:title, :message, :who)
+		params.require(:pic).permit(:title, :message, :who, :image)
 	end
 
 end

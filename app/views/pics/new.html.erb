@@ -6,6 +6,11 @@
 			<%= f.input :title, label: 'Enter  Your Title', placeholder: 'e.g. Riker claps' %>
 			<%= f.input :message, label: 'What is going on?' , placeholder: 'e.g. Pizza' %>
 			<%= f.input :who, label: 'Who is this?' , placeholder: 'e.g. Riker' %>
+
+			<br />
+			<%= f.input :image, label: 'Upload a Picture' %>
+			<br />
+			
 			<%= f.submit "Save", :class => 'btn btn-warning btn-large' %>
 		<% end %>
 </div>
